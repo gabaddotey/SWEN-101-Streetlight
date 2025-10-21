@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Streetlight</title>
+    <title>Streetlight|Home</title>
 </head>
 
 <body>
     <div class="container">
         <h1>Title</h1>
-        <div>Nav Bar</div>
+        <div id="nav">Nav Bar</div>
         <div id="carousel"> 
             <div class="resource-preview">
                 <h3>Resource</h3>
@@ -16,6 +16,24 @@
                 <h4>Location</h4>
                 <h5>Rating</h5>
                 <p>4.3/5.0</p>
+            </div>
+
+            <div class="resource-preview">
+                <h3>Resource #2</h3>
+                <img src="">
+                <ul class="tags"> <li>Tag #1</li> <li>Tag #2</li> <li>Tag #3</li></ul>
+                <h4>Location</h4>
+                <h5>Rating</h5>
+                <p>3.4/5.0</p>
+            </div>
+
+            <div class="resource-preview">
+                <h3>Resource #3</h3>
+                <img src="">
+                <ul class="tags"> <li>Tag #1</li> <li>Tag #2</li> <li>Tag #3</li></ul>
+                <h4>Location</h4>
+                <h5>Rating</h5>
+                <p>5.0/5.0</p>
             </div>
         </div>
 
@@ -28,14 +46,36 @@
 </body>
 
 <style>
+    body{
+        padding: 20px;
+    }
     .container{
+        background: whitesmoke;
+        
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 10px;
+    }
+
+    /* This just outlines all of the items in the grid container for visibility */
+    .container > *{
+        border: dashed black 2.5px;
+        margin: 0;
+        /* height: fit-content; */
+    }
+
+    #nav{
+        height: 100%;
+        grid-row: span 2;
     }
     
-    .carousel{
+    #carousel{
         background: lightgrey;
+
+        display: grid;
+        grid-auto-flow: column;
+        place-items: center;
     }
 
     .resource-preview{
