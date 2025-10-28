@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Streetlight|Home</title>
+    <title>Streetlight | Home</title>
 </head>
 
 <body>
     <div class="container">
-        <h1>Title</h1>
-        <div id="nav">Nav Bar</div>
-        <div id="carousel"> 
+        <h1>Streetlight</h1>
+        <div id="nav">Nav Bar<input type="checkbox"></input></div>
+        <div id="spacer">SPACE</div>
+        <div id="carousel">
             <div class="resource-preview">
+                <a href=#></br></a>
                 <h3>Resource</h3>
                 <img src="">
                 <ul class="tags"> <li>Tag #1</li> <li>Tag #2</li> <li>Tag #3</li></ul>
                 <h4>Location</h4>
-                <h5>Rating</h5>
+                <h4>Rating</h4>
                 <p>4.3/5.0</p>
             </div>
 
             <div class="resource-preview">
+                <a href=#></br></a>
                 <h3>Resource #2</h3>
                 <img src="">
                 <ul class="tags"> <li>Tag #1</li> <li>Tag #2</li> <li>Tag #3</li></ul>
                 <h4>Location</h4>
-                <h5>Rating</h5>
+                <h4>Rating</h4>
                 <p>3.4/5.0</p>
             </div>
 
             <div class="resource-preview">
+                <a href=#></br></a>
                 <h3>Resource #3</h3>
                 <img src="">
                 <ul class="tags"> <li>Tag #1</li> <li>Tag #2</li> <li>Tag #3</li></ul>
                 <h4>Location</h4>
-                <h5>Rating</h5>
+                <h4>Rating</h4>
                 <p>5.0/5.0</p>
             </div>
         </div>
@@ -42,18 +46,48 @@
     </div>
 
 
-
 </body>
 
 <style>
+    *{
+        transition: all .5s cubic-bezier(0.26, 0.67, 1, 1);
+    }
+
     body{
         padding: 20px;
     }
-    .container{
-        background: whitesmoke;
+
+    h1{
+        padding: 10px;
+        align-content: center; /*Could be start*/
+    }
+
+    img{
+        border: dashed gray 3px;
+        width: 80%;
+        height: 20%;
+    }
+
+    .tags{
+        display: flex;
+        padding: 0;
+        gap: 10px;
+    }
+
+    .tags li{
+        list-style: none;
         
+        border: solid black 2px;
+        padding: 5px;
+        font-size: 85%;
+    }
+
+    .container{        
+        max-width: 95vw;
+        min-height: 90vh;
+
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 95% 5%;
         grid-template-rows: auto auto;
         grid-gap: 10px;
     }
@@ -62,16 +96,26 @@
     .container > *{
         border: dashed black 2.5px;
         margin: 0;
-        /* height: fit-content; */
+        justify-items: center;
+    }
+
+    #spacer{
+        opacity: 10%;
     }
 
     #nav{
-        height: 100%;
-        grid-row: span 2;
+        grid-row: span 3;
+        grid-auto-flow: column;
+    }
+
+    .container:has(#nav input:checked){
+        grid-template-columns: 80% 20%;
     }
     
     #carousel{
         background: lightgrey;
+
+        padding: 40px;
 
         display: grid;
         grid-auto-flow: column;
@@ -80,7 +124,23 @@
 
     .resource-preview{
         background: lightblue;
-        width: 190px;
+
+        position: relative;
+        padding: 15px;
+
+        width: 70%;
+        height: 100%;
+    }
+
+    .resource-preview a{
+        display: block;
+        position: absolute;
+        
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
     }
 </style>
 </html>
