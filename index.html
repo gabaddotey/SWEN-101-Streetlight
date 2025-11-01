@@ -2,12 +2,52 @@
 <html>
 <head>
     <title>Streetlight | Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="container">
         <h1>Streetlight</h1>
-        <div id="nav">Nav Bar<input type="checkbox"></input></div>
+        <div id="nav">
+            <input class ="check" id="checkbox" type="checkbox"></input>
+            <div id="nav-reveal">
+                <div class="account">
+                    <a href="Pages/account.html">
+                        <h4>Account Settings</h4>
+                    </a>
+                </div>
+                <div class="events">
+                    <a href="Pages/events.html">
+                        <h4>Events</h4>
+                    </a>
+                </div>
+                <div class="donate">
+                    <a href="Pages/donate.html">
+                        <h4>Donate</h4>
+                    </a>
+                </div>
+                <div class="map">
+                    <a href="Pages/map.html">
+                        <h4>Map</h4>
+                    </a>
+                </div>
+                <div class="bookmarks">
+                    <a href="Pages/bookmarks.html">
+                        <h4>Bookmarks</h4>
+                    </a>
+                </div>
+                <div class="search">
+                    <a href="Pages/search.html">
+                        <h4>Search</h4>
+                    </a>
+                </div>
+                <div class="discussion">
+                    <a href="Pages/discussion.html">
+                        <h4>Discussion Board</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
         <div id="spacer">SPACE</div>
         <div id="carousel">
             <div class="resource-preview">
@@ -48,99 +88,4 @@
 
 </body>
 
-<style>
-    *{
-        transition: all .5s cubic-bezier(0.26, 0.67, 1, 1);
-    }
-
-    body{
-        padding: 20px;
-    }
-
-    h1{
-        padding: 10px;
-        align-content: center; /*Could be start*/
-    }
-
-    img{
-        border: dashed gray 3px;
-        width: 80%;
-        height: 20%;
-    }
-
-    .tags{
-        display: flex;
-        padding: 0;
-        gap: 10px;
-    }
-
-    .tags li{
-        list-style: none;
-        
-        border: solid black 2px;
-        padding: 5px;
-        font-size: 85%;
-    }
-
-    .container{        
-        max-width: 95vw;
-        min-height: 90vh;
-
-        display: grid;
-        grid-template-columns: 95% 5%;
-        grid-template-rows: auto auto;
-        grid-gap: 10px;
-    }
-
-    /* This just outlines all of the items in the grid container for visibility */
-    .container > *{
-        border: dashed black 2.5px;
-        margin: 0;
-        justify-items: center;
-    }
-
-    #spacer{
-        opacity: 10%;
-    }
-
-    #nav{
-        grid-row: span 3;
-        grid-auto-flow: column;
-    }
-
-    .container:has(#nav input:checked){
-        grid-template-columns: 80% 20%;
-    }
-    
-    #carousel{
-        background: lightgrey;
-
-        padding: 40px;
-
-        display: grid;
-        grid-auto-flow: column;
-        place-items: center;
-    }
-
-    .resource-preview{
-        background: lightblue;
-
-        position: relative;
-        padding: 15px;
-
-        width: 70%;
-        height: 100%;
-    }
-
-    .resource-preview a{
-        display: block;
-        position: absolute;
-        
-        top: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1;
-    }
-</style>
 </html>
