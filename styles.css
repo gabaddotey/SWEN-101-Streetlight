@@ -163,7 +163,7 @@ a:visited{
     display: grid;
     grid-auto-flow: column;
     place-items: center;
-    margin-top: 150px;
+
 }
 
 #carousel-events{
