@@ -135,7 +135,7 @@ label{
   width: 90%;
   height: 8px;
   background-color: black;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .check:checked ~ #nav-reveal {
