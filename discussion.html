@@ -8,7 +8,8 @@
 <body>
 
     <div class="container"> 
-        <h1>Streetlight</h1>
+        <h1>Discussion Board</h1>
+        
         <div id="nav">
             <input class ="check" id="checkbox" type="checkbox"></input>
             <label for="checkbox">
@@ -62,51 +63,62 @@
             </div>
         </div>
 
+        <div id="content">
+                <textarea placeholder="Enter Post Here!"></textarea>
+                <button>Post!</button>        
+            
+                <div class="comment">
+                    <p><i>User 1234 commented:</i> Nice post!</p>
+                </div>
+
+                <div class="comment">
+                    <p><i>User 5678 commented:</i> I agree!</p>
+                </div>
+                
+            </div>
+            
+            <div id="latest">
+                <h2>Latest Posts</h2>
+        
+                <div class="post-preview">
+                    <h3>Post #1</h3>
+                    <p>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah…</p>
+                </div>
     
-        <h1>Discussion Board</h1>
+                <div class="post-preview">
+                    <h3>Post #2</h3>
+                    <p>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah…</p>
+                </div>
     
-        <div>
-            <textarea placeholder="Enter Post Here!"></textarea>
-            <button>Post!</button>
-        </div>
+                <div class="post-preview">
+                    <h3>Post #3</h3>
+                    <p>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah…</p>
+                </div>
+            </div>
     
-        <div>
-            <h2>Latest Posts</h2>
-    
-            <div class="post-preview">
-                <h3>Post #1</h3>
-                <p>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah…</p>
+            <div class="back-button">
+                <a href="index.html"><h4>Back</h4></a>
             </div>
 
-            <div class="post-preview">
-                <h3>Post #2</h3>
-                <p>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah…</p>
-            </div>
-
-            <div class="post-preview">
-                <h3>Post #3</h3>
-                <p>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah…</p>
-            </div>
         </div>
-
-        <div class="back-button">
-            <a href="index.html"><h4>Back</h4></a>
-        </div>
-    </div>
 
 </body>
 
 <style>
-    .post-preview{
-        background: grey;
+    #content button{
+        font-size: 18px;
+        position: absolute;
+        align-self: center;
+        margin: 10px;
     }
 
     textarea{
         width: 80%;
         height: 30vh;
         background: grey;
-        
+        padding: 10px;
     }
+
     ::placeholder {
        color: rgba(47, 47, 47, 0.852);
        font-size: 15px;
@@ -118,6 +130,7 @@
         padding: 5%;
         display: inline;
     }
+
 </style>
 
 
