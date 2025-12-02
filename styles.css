@@ -122,6 +122,22 @@ a:visited{
     width: 70px;
 }
 
+#checkbox{
+    display: none;
+}
+
+label{
+    cursor: pointer;
+    padding: 4px;
+}
+
+#nav-icon{
+  width: 90%;
+  height: 8px;
+  background-color: black;
+  margin-bottom: 8px;
+}
+
 .check:checked ~ #nav-reveal {
     display: grid;
 }
@@ -189,4 +205,30 @@ a:visited{
     left: 0;
     width: 100%;
     z-index: 1;
+}
+
+#rating{
+    height: max-content;
+}
+
+#info{
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+#info a{
+    background-color: grey;
+    border: solid black 2px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#bookmark{
+    position: absolute;
+    right: 0;
+}
+
+
+#bookmark i{
+    color: cornflowerblue;
 }
