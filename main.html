@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Streetlight | Discussion</title>
+    <title>Streetlight | Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-    <div class="container"> 
+    <div class="container">
         <h1>Streetlight</h1>
         <div id="nav">
             <input class ="check" id="checkbox" type="checkbox"></input>
+            <label for="checkbox">
+                <div style="justify-items: center;">
+                    <div id="nav-icon"></div> <div id="nav-icon"></div> <div id="nav-icon"></div>
+                </div>
+            </label>
+
             <div id="nav-reveal">
                 <div class="account">
                     <a href="account.html">
@@ -49,63 +54,44 @@
                 </div>
             </div>
         </div>
-    
-        <h1>Discussion Board</h1>
-    
-        <div>
-            <textarea placeholder="Enter Post Here!"></textarea>
-            <button>Post!</button>
-        </div>
-    
-        <div>
-            <h2>Latest Posts</h2>
-    
-            <div class="post-preview">
-                <h3>Post #1</h3>
-                <p>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah…</p>
+
+        <div class="carousel">
+            <div class="resource-preview">
+                <a href=food-bank.html></br></a>
+                <h3>Food Bank</h3>
+                <img src="Images/image.webp">
+                <ul class="tags"> <li>Free</li> <li>Food</li> <li>Tasty</li></ul>
+                <h4>Location: 123 Something Lane</h4>
+                <h4>Rating</h4>
+                <p>4.3/5.0</p>
             </div>
 
-            <div class="post-preview">
-                <h3>Post #2</h3>
-                <p>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah…</p>
+            <div class="resource-preview">
+                <a href=clothing-drive.html></br></a>
+                <h3>Clothing Drive</h3>
+                <img src="Images/volunteers-organizing-a-clothing-drive-for-those-in-need-photo.webp">
+                <ul class="tags"> <li>Clothes</li> <li>Cheap</li> <li>Donate</li></ul>
+                <h4>Location: 5 Pebble Hill Road</h4>
+                <h4>Rating</h4>
+                <p>3.4/5.0</p>
             </div>
 
-            <div class="post-preview">
-                <h3>Post #3</h3>
-                <p>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah…</p>
+            <div class="resource-preview">
+                <a href=shelter.html></br></a>
+                <h3>Shelter</h3>
+                <img src="Images/360_F_631968170_QZiPx3Cfrni7ywZ3wAVmvmeUtmbOwOSc.webp">
+                <ul class="tags"> <li>Open Beds</li> <li>Comfy</li> <li>Free</li></ul>
+                <h4>Location: 456 Happy lane</h4>
+                <h4>Rating</h4>
+                <p>5.0/5.0</p>
             </div>
         </div>
 
-        <div class="back-button">
-            <a href="main.html"><h4>Back</h4></a>
         </div>
+
     </div>
 
+
 </body>
-
-<style>
-    .post-preview{
-        background: grey;
-    }
-
-    textarea{
-        width: 80%;
-        height: 30vh;
-        background: grey;
-        
-    }
-    ::placeholder {
-       color: rgba(47, 47, 47, 0.852);
-       font-size: 15px;
-    }
-
-    #nav{
-        grid-row: span 4;
-        grid-auto-flow: column;
-        padding: 5%;
-        display: inline;
-    }
-</style>
-
 
 </html>
