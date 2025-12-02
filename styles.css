@@ -207,10 +207,6 @@ label{
     z-index: 1;
 }
 
-#rating{
-    height: max-content;
-}
-
 #info{
     display: grid;
     grid-template-columns: 65% 35%;
@@ -223,11 +219,23 @@ label{
     font-size: 20px;
 }
 
-#bookmark{
-    position: absolute;
-    right: 0;
+#stars{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
 }
 
+.checked{
+    color: rgb(250, 202, 27);
+}
+
+.fa-star-half-o{
+    color: rgb(250, 202, 27);
+}
+
+#bookmark{
+    margin-left: 15px;
+}
 
 #bookmark i{
     color: cornflowerblue;
