@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Streetlight | Discussion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container"> 
+        <h1>Streetlight</h1>
+        <div id="nav">
+            <input class ="check" id="checkbox" type="checkbox"></input>
+            <div id="nav-reveal">
+                <div class="account">
+                    <a href="account.html">
+                        <h4>Account Settings</h4>
+                    </a>
+                </div>
+                <div class="events">
+                    <a href="events.html">
+                        <h4>Events</h4>
+                    </a>
+                </div>
+                <div class="donate">
+                    <a href="donate.html">
+                        <h4>Donate</h4>
+                    </a>
+                </div>
+                <div class="map">
+                    <a href="map.html">
+                        <h4>Map</h4>
+                    </a>
+                </div>
+                <div class="bookmarks">
+                    <a href="bookmarks.html">
+                        <h4>Bookmarks</h4>
+                    </a>
+                </div>
+                <div class="search">
+                    <a href="search.html">
+                        <h4>Search</h4>
+                    </a>
+                </div>
+                <div class="discussion">
+                    <a href="discussion.html">
+                        <h4>Discussion Board</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <h1>Discussion Board</h1>
+    
+        <div>
+            <textarea placeholder="Enter Post Here!"></textarea>
+            <button>Post!</button>
+        </div>
+    
+        <div>
+            <h2>Latest Posts</h2>
+    
+            <div class="post-preview">
+                <h3>Post #1</h3>
+                <p>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah…</p>
+            </div>
+
+            <div class="post-preview">
+                <h3>Post #2</h3>
+                <p>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah…</p>
+            </div>
+
+            <div class="post-preview">
+                <h3>Post #3</h3>
+                <p>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah…</p>
+            </div>
+        </div>
+
+        <div class="back-button">
+            <a href="index.html"><h4>Back</h4></a>
+        </div>
+    </div>
+
+</body>
+
+<style>
+    .post-preview{
+        background: grey;
+    }
+
+    textarea{
+        width: 80%;
+        height: 30vh;
+        background: grey;
+        
+    }
+    ::placeholder {
+       color: rgba(47, 47, 47, 0.852);
+       font-size: 15px;
+    }
+
+    #nav{
+        grid-row: span 4;
+        grid-auto-flow: column;
+        padding: 5%;
+        display: inline;
+    }
+</style>
+
+
+</html>
