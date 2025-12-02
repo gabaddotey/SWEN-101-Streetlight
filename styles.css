@@ -224,11 +224,7 @@ label{
     align-items: center;
 }
 
-.checked{
-    color: rgb(250, 202, 27);
-}
-
-.fa-star-half-o{
+.checked,.fa-star-half-o{
     color: rgb(250, 202, 27);
 }
 
