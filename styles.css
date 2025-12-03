@@ -5,6 +5,7 @@
 
 body{
     padding: 20px;
+    background: #EDEDEF;
 }
 
 h1{
@@ -224,7 +225,7 @@ label{
     align-items: center;
 }
 
-.checked,.fa-star-half-o{
+.checked,.fa-star-half-o, .fa-star-o{
     color: rgb(250, 202, 27);
 }
 
@@ -259,4 +260,10 @@ label{
 
 .comment i, .post-preview h3{
     font-size: 18px;
+}
+
+#logo *{
+    justify-content: left;
+    padding: 0;
+    margin-top: 0;
 }
